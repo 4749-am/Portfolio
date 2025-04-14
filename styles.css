@@ -24,39 +24,42 @@ h1,h2 {
     padding-top: 10px;
 }
 
-.typewriter h2 {
-    overflow: hidden;
-    border-right: .15em solid orange;
-    margin: 0 auto;
-    white-space: nowrap;
-    letter-spacing: .15em;
-    animation: 
-      typing 10s steps(40, end),
-      blink-caret .75s step-end infinite;
-}
-  
-  /* The typing effect */
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-  
-  /* The typewriter cursor effect */
-  @keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
-}
-
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid var(--main-text-color);
+    padding-right: 10px;
+    box-shadow: 5px 5px 5px var(--fifth-color);
 }
 
 a {
     text-decoration: none;
     color: var(--main-text-color);
+}
+
+.typewriter h1 {
+    overflow: hidden;
+    white-space: nowrap; 
+    margin: 0 auto; 
+    letter-spacing: .10em; 
+    animation: 
+      typing 5s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+p {
+    padding: 10px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, fr);
 }
