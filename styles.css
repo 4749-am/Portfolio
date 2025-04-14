@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-html {
+body {
     background-color: #d1a701;
     color: #1c1e26;
 }
@@ -31,7 +31,7 @@ nav {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-right: 10px;
-    box-shadow: 5px 5px 5px var(--fifth-color);
+    box-shadow: 5px 5px 5px var(--main-text-color);
 }
 
 a {
@@ -45,7 +45,7 @@ a {
     margin: 0 auto; 
     letter-spacing: .10em; 
     animation: 
-      typing 5s steps(40, end),
+      typing 10s steps(40, end),
       blink-caret .75s step-end infinite;
 }
   
@@ -57,9 +57,60 @@ a {
 
 p {
     padding: 10px;
+    text-align: center;
+}
+
+#projects {
+    display: grid;
+    place-items: center;
 }
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(2, fr);
+    grid-template-columns: repeat(2,1fr);
+    gap: 80px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.project-box {
+    display: grid;
+    width: 400px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    box-shadow: 5px 5px 5px var(--main-text-color);
+}
+
+.project-box:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 5px var(--fifth-color);
+}
+
+.project-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-text-color);
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a {
+    color: var(--fourth-color);
+}
+
+@media (max-width: 768px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
 }
