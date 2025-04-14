@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #d1a701;
+    color: #1c1e26;
+}
+
+:root {
+    --background-color: #d1a701;
+    --main-text-color: #1c1e26;
+    --third-color: #fdeb37; 
+    --fourth-color: #bdac9c;
+    --fifth-color: #9d815b;
+}
+
+h1,h2 {
+    font-family: Pixelify Sans, sans-serif;
+    font-weight: 10;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.typewriter h2 {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    margin: 0 auto;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: 
+      typing 10s steps(40, end),
+      blink-caret .75s step-end infinite;
+}
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--main-text-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-text-color);
+}
