@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d1a701;
+    background-color: var(--background-color);
     color: var(--dark-color);
     font-family: Orbitron, sans-serif;
 }
@@ -52,13 +52,27 @@ a {
     color: var(--dark-color);
 }
 
+.terminal {
+    background-color: var(--dark-color);
+    width: 850px;
+    height: 260px;
+    margin: 0 auto;
+    position: relative;
+    color: var(--background-color);
+    border: 2px solid var(--white-color);
+}
+
+.typewriter {
+    border-bottom: 2px solid var(--white-color);
+    padding-bottom: 10px;
+}
+
 .typewriter h1 {
     overflow: hidden;
     white-space: nowrap; 
-    margin: 0 auto; 
+    margin: 0 auto;
     letter-spacing: .10em; 
-    animation: 
-      typing 10s steps(40, end);
+    animation: typing 8s steps(31, end);
 }
   
 /* The typing effect */
@@ -68,12 +82,32 @@ a {
 }
 
 .introduction {
-    margin: 20px 50px 20px 50px;
+    margin: 20px 0;
     text-align: center;
+    position: relative;
 }
 
 .introduction p {
-    padding: 5px;
+    padding: 10px;
+}
+
+.cursor {
+    width: 15px;
+    height: 15px;
+    background-color: var(--background-color);
+    animation: blinking-cursor 1s infinite;
+    position: absolute;
+    top: 13px;
+    left: 190px;
+}
+
+@keyframes blinking-cursor {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
 }
 
 .blue-background-text {
@@ -91,6 +125,7 @@ a {
     gap: 80px;
     padding: 20px;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .project-box {
@@ -100,12 +135,13 @@ a {
     overflow: hidden;
     border-radius: 8px;
     transition: transform 0.3s ease;
-    box-shadow: 5px 5px 5px var(--dark-color);
+    box-shadow: 2px 2px 20px var(--dark-color);
 }
 
 .project-box:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 3px var(--white-color);
+    transform: scale(1.05);
+    box-shadow: 2px 2px 15px var(--white-color);
+    transition: 0.3s ease;
 }
 
 .project-box img {
@@ -126,31 +162,31 @@ a {
 }
 
 .pixelart-to-css {
-    box-shadow: /* 100px 120px */
-    40px 0px 0 0 var(--dark-color), 
-    60px 0px 0 0 var(--dark-color), 
-    240px 0px 0 0 var(--dark-color), 
-    260px 0px 0 0 var(--dark-color), 
-    20px 20px 0 0 var(--dark-color), 
-    280px 20px 0 0 var(--dark-color), 
-    20px 40px 0 0 var(--dark-color), 
-    280px 40px 0 0 var(--dark-color), 
-    20px 60px 0 0 var(--dark-color), 
-    280px 60px 0 0 var(--dark-color), 
-    0px 80px 0 0 var(--dark-color), 
-    300px 80px 0 0 var(--dark-color), 
-    0px 100px 0 0 var(--dark-color), 
-    300px 100px 0 0 var(--dark-color), 
-    20px 120px 0 0 var(--dark-color), 
-    280px 120px 0 0 var(--dark-color), 
-    20px 140px 0 0 var(--dark-color), 
-    280px 140px 0 0 var(--dark-color), 
-    20px 160px 0 0 var(--dark-color), 
-    280px 160px 0 0 var(--dark-color), 
-    40px 180px 0 0 var(--dark-color), 
-    60px 180px 0 0 var(--dark-color), 
-    240px 180px 0 0 var(--dark-color), 
-    260px 180px 0 0 var(--dark-color);
+    box-shadow:
+    40px 0px var(--dark-color), 
+    60px 0px var(--dark-color), 
+    240px 0px var(--dark-color), 
+    260px 0px var(--dark-color), 
+    20px 20px var(--dark-color), 
+    280px 20px var(--dark-color), 
+    20px 40px var(--dark-color), 
+    280px 40px var(--dark-color), 
+    20px 60px var(--dark-color), 
+    280px 60px var(--dark-color), 
+    0px 80px var(--dark-color), 
+    300px 80px var(--dark-color), 
+    0px 100px var(--dark-color), 
+    300px 100px var(--dark-color), 
+    20px 120px var(--dark-color), 
+    280px 120px var(--dark-color), 
+    20px 140px var(--dark-color), 
+    280px 140px var(--dark-color), 
+    20px 160px var(--dark-color), 
+    280px 160px var(--dark-color), 
+    40px 180px var(--dark-color), 
+    60px 180px var(--dark-color), 
+    240px 180px var(--dark-color), 
+    260px 180px var(--dark-color);
     height: 20px;
     width: 20px;
 }
@@ -160,6 +196,26 @@ a {
     justify-content: center;
     align-items: center;
     height: 160px;
+}
+
+form {
+    border: 2px solid var(--dark-color);
+    color: var(--dark-color);
+    border-radius: 8px;
+    width: 400px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+form h2 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+form label, input {
+    display: flex;
 }
 
 footer {

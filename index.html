@@ -27,17 +27,20 @@
     </header>
     <main>
       <section id="welcome-section">
-        <div class="typewriter">
-          <h1 id="welcome-title">OLD-SCHOOL VIBES, NEXT-GEN CODE</h1>
-        </div>
-        <div class="introduction">
-          <p>Hi there! I’m Anne-Marie, a junior web developer.</p>
-          <p>
+        <div class="terminal">
+          <div class="typewriter">
+            <h1 id="welcome-title">OLD-SCHOOL VIBES, NEXT-GEN CODE</h1>
+          </div>
+          <div class="introduction">
+            <div class="cursor"></div>
+            <p>Hi there! I’m Anne-Marie, a junior web developer.</p>
+            <p>
             Whether you need a <span class="blue-background-text">sleek portfolio</span>, a <span class="blue-background-text">dynamic landing page</span>, or a
             <span class="blue-background-text">full web app</span>,<br>I’m all about building experiences that look great and
             work flawlessly—on any device.
-          </p>
-          <p><span class="blue-background-text">Let’s turn your vision into something awesome on the web!</span></p>
+            </p>
+            <p><span class="blue-background-text">Let’s turn your vision into something awesome on the web!</span></p>
+          </div>
         </div>
       </section>
       <section id="projects">
@@ -60,14 +63,19 @@
         </div>
       </section>
       <section id="form">
-        <form action="">
-          
+        <form action="" method="post">
+          <h2>Contact:</h2>
+          <label for="name">Name:</label>
+          <input type="text" required>
+          <label for="email">Email:</label>
+          <input type="email" required>
+          <label for="message">Message:</label>
+          <input type="text" required>
         </form>
       </section>
     </main>
     <footer id="contact">
-      <a href="mailto:" target="_blank">Email</a>
-      <a href="tel:" target="_blank">Tel</a>
+      <a href="tel:" target="_blank">Connect with me by tel</a>
     </footer>
   </body>
 </html>
