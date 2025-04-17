@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 body {
     background-color: var(--background-color);
     color: var(--dark-color);
     font-family: Orbitron, sans-serif;
+    padding-top: 100px;
+    position: relative;
 }
 
 :root {
@@ -29,9 +32,24 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-    margin: 0 50px 20px 50px;
+    margin: 0 5vw;
     border-bottom: 2px solid var(--dark-color);
     height: 80px;
+    width: 90vw;
+    background-color: var(--background-color);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.background-header {
+    width: 100vw;
+    height: 80px;
+    background-color: var(--background-color);
+    position: fixed;
+    z-index: 998;
+    top: 0;
 }
 
 .navbar {
@@ -56,7 +74,7 @@ a {
     background-color: var(--dark-color);
     width: 850px;
     height: 260px;
-    margin: 0 auto;
+    margin: 20px auto;
     position: relative;
     color: var(--background-color);
     border: 2px solid var(--white-color);
@@ -161,7 +179,7 @@ a {
     font-weight: bold;
 }
 
-.pixelart-to-css {
+.pixelart-bracket {
     box-shadow:
     40px 0px var(--dark-color), 
     60px 0px var(--dark-color), 
@@ -197,6 +215,62 @@ a {
     align-items: center;
     height: 160px;
 }
+
+.pixelart-space-invader {
+    box-shadow: 
+    140px 140px var(--dark-color), 
+    260px 140px var(--dark-color), 
+    160px 160px var(--dark-color), 
+    240px 160px var(--dark-color), 
+    140px 180px var(--dark-color), 
+    160px 180px var(--dark-color), 
+    180px 180px var(--dark-color), 
+    200px 180px var(--dark-color), 
+    220px 180px var(--dark-color), 
+    240px 180px var(--dark-color), 
+    260px 180px var(--dark-color), 
+    120px 200px var(--dark-color), 
+    140px 200px var(--dark-color), 
+    180px 200px var(--dark-color), 
+    200px 200px var(--dark-color), 
+    220px 200px var(--dark-color), 
+    260px 200px var(--dark-color), 
+    280px 200px var(--dark-color), 
+    100px 220px var(--dark-color), 
+    120px 220px var(--dark-color), 
+    140px 220px var(--dark-color), 
+    160px 220px var(--dark-color), 
+    180px 220px var(--dark-color), 
+    200px 220px var(--dark-color), 
+    220px 220px var(--dark-color), 
+    240px 220px var(--dark-color), 
+    260px 220px var(--dark-color), 
+    280px 220px var(--dark-color), 
+    300px 220px var(--dark-color), 
+    100px 240px var(--dark-color), 
+    140px 240px var(--dark-color), 
+    160px 240px var(--dark-color), 
+    180px 240px var(--dark-color), 
+    200px 240px var(--dark-color), 
+    220px 240px var(--dark-color), 
+    240px 240px var(--dark-color), 
+    260px 240px var(--dark-color), 
+    300px 240px var(--dark-color), 
+    100px 260px var(--dark-color), 
+    140px 260px var(--dark-color), 
+    260px 260px var(--dark-color), 
+    300px 260px var(--dark-color), 
+    160px 280px var(--dark-color), 
+    180px 280px var(--dark-color), 
+    220px 280px var(--dark-color), 
+    240px 280px var(--dark-color);
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 340px;
+    top: 20px;
+    left: 1140px;
+  }
 
 .form-container {
     background-color: var(--dark-color);
@@ -254,19 +328,24 @@ button:hover {
     font-family: Orbitron, sans-serif;
 }
 
-footer {
+#contact {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px 0;
-    border-bottom: thick double var(--dark-color);
-    margin-right: 50px;
-    margin-left: 50px;
-    margin-bottom: 50px;
+    width: 90vw;
+    margin: 0 5vw;
 }
 
-footer a {
+#contact a {
     color: var(--dark-color);
+}
+
+footer {
+    min-height: 30px;
+    border-top: thick double var(--dark-color);
+    width: 90vw;
+    margin: 0 5vw;
 }
 
 @media (max-width: 768px) {
@@ -274,3 +353,4 @@ footer a {
         grid-template-columns: 1fr;
     }
 }
+
