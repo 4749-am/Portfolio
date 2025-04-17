@@ -330,19 +330,23 @@ button:hover {
 
 #contact {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
     width: 90vw;
     margin: 0 5vw;
 }
 
-#contact a {
-    color: var(--dark-color);
+.contact-links {
+    display: flex;
+    gap: 20px;
+}
+
+#connect-with-me {
+    margin-top: 38px;
 }
 
 footer {
-    min-height: 30px;
+    min-height: 50px;
     border-top: thick double var(--dark-color);
     width: 90vw;
     margin: 0 5vw;
