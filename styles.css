@@ -74,21 +74,27 @@ a {
     background-color: var(--dark-color);
     width: 850px;
     height: 260px;
-    margin: 20px auto;
+    margin: 60px auto;
     position: relative;
     color: var(--background-color);
     border: 2px solid var(--white-color);
+    overflow: hidden;
 }
 
-.typewriter {
-    border-bottom: 2px solid var(--white-color);
-    padding-bottom: 10px;
+.terminal-header {
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+    padding-right: 10px;
+    padding-top: 2px;
+    gap: 20px;
+    border-bottom: 1px solid var(--white-color);
 }
 
 .typewriter h1 {
     overflow: hidden;
     white-space: nowrap; 
-    margin: 0 auto;
+    margin: 5px auto 0;
     letter-spacing: .10em; 
     animation: typing 8s steps(31, end);
 }
@@ -100,7 +106,7 @@ a {
 }
 
 .introduction {
-    margin: 20px 0;
+    margin: 10px 0;
     text-align: center;
     position: relative;
 }
@@ -171,7 +177,7 @@ a {
 .pixelart {
     width: 320px;
     height: 200px;
-    margin: 20px 0;
+    margin: 40px 0;
 }
 
 .pixelart-text {
@@ -270,7 +276,105 @@ a {
     right: 340px;
     top: 20px;
     left: 1140px;
-  }
+}
+
+.pixelart-dinosaur {
+        box-shadow: 
+        160px 80px var(--dark-color), 
+        180px 80px var(--dark-color), 
+        200px 80px var(--dark-color), 
+        220px 80px var(--dark-color), 
+        240px 80px var(--dark-color), 
+        260px 80px var(--dark-color), 
+        140px 100px var(--dark-color), 
+        160px 100px var(--dark-color), 
+        200px 100px var(--dark-color), 
+        220px 100px var(--dark-color), 
+        240px 100px var(--dark-color), 
+        260px 100px var(--dark-color), 
+        280px 100px var(--dark-color), 
+        140px 120px var(--dark-color), 
+        160px 120px var(--dark-color), 
+        180px 120px var(--dark-color), 
+        200px 120px var(--dark-color), 
+        220px 120px var(--dark-color), 
+        240px 120px var(--dark-color), 
+        260px 120px var(--dark-color), 
+        280px 120px var(--dark-color), 
+        140px 140px var(--dark-color), 
+        160px 140px var(--dark-color), 
+        180px 140px var(--dark-color), 
+        200px 140px var(--dark-color), 
+        220px 140px var(--dark-color), 
+        240px 140px var(--dark-color), 
+        260px 140px var(--dark-color), 
+        280px 140px var(--dark-color), 
+        140px 160px var(--dark-color), 
+        160px 160px var(--dark-color), 
+        180px 160px var(--dark-color), 
+        200px 160px var(--dark-color), 
+        140px 180px var(--dark-color), 
+        160px 180px var(--dark-color), 
+        180px 180px var(--dark-color), 
+        200px 180px var(--dark-color), 
+        220px 180px var(--dark-color), 
+        240px 180px var(--dark-color), 
+        20px 200px var(--dark-color), 
+        120px 200px var(--dark-color), 
+        140px 200px var(--dark-color), 
+        160px 200px var(--dark-color), 
+        180px 200px var(--dark-color), 
+        20px 220px var(--dark-color), 
+        40px 220px var(--dark-color), 
+        100px 220px var(--dark-color), 
+        120px 220px var(--dark-color), 
+        140px 220px var(--dark-color), 
+        160px 220px var(--dark-color), 
+        180px 220px var(--dark-color), 
+        200px 220px var(--dark-color), 
+        220px 220px var(--dark-color), 
+        20px 240px var(--dark-color), 
+        40px 240px var(--dark-color), 
+        60px 240px var(--dark-color), 
+        80px 240px var(--dark-color), 
+        100px 240px var(--dark-color), 
+        120px 240px var(--dark-color), 
+        140px 240px var(--dark-color), 
+        160px 240px var(--dark-color), 
+        180px 240px var(--dark-color), 
+        220px 240px var(--dark-color), 
+        40px 260px var(--dark-color), 
+        60px 260px var(--dark-color), 
+        80px 260px var(--dark-color), 
+        100px 260px var(--dark-color), 
+        120px 260px var(--dark-color), 
+        140px 260px var(--dark-color), 
+        160px 260px var(--dark-color), 
+        180px 260px var(--dark-color), 
+        60px 280px var(--dark-color), 
+        80px 280px var(--dark-color), 
+        100px 280px var(--dark-color), 
+        120px 280px var(--dark-color), 
+        140px 280px var(--dark-color), 
+        160px 280px var(--dark-color), 
+        80px 300px var(--dark-color), 
+        100px 300px var(--dark-color), 
+        120px 300px var(--dark-color), 
+        140px 300px var(--dark-color), 
+        80px 320px var(--dark-color), 
+        100px 320px var(--dark-color), 
+        140px 320px var(--dark-color), 
+        80px 340px var(--dark-color), 
+        140px 340px var(--dark-color), 
+        80px 360px var(--dark-color), 
+        100px 360px var(--dark-color), 
+        140px 360px var(--dark-color), 
+        160px 360px var(--dark-color);
+        height: 20px;
+        width: 20px;
+        position: absolute;
+        top: 440px;
+}
 
 .form-container {
     background-color: var(--dark-color);
@@ -279,7 +383,7 @@ a {
     box-shadow: 0 4px 8px var(--white-color);
     width: 400px;
     text-align: center;
-    margin: 0 auto;
+    margin: 80px auto;
     color: var(--background-color);
 }
 
