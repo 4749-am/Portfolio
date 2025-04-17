@@ -91,6 +91,14 @@ a {
     border-bottom: 1px solid var(--white-color);
 }
 
+.dash {
+    padding-top: 3px;
+}
+
+.cross {
+    padding-top: 3px;
+}
+
 .typewriter h1 {
     overflow: hidden;
     white-space: nowrap; 
