@@ -160,7 +160,7 @@ a {
 .project-box {
     display: grid;
     width: 400px;
-    height: 350px;
+    aspect-ratio: 40 / 35;
     overflow: hidden;
     border-radius: 8px;
     transition: transform 0.3s ease;
@@ -181,10 +181,12 @@ a {
     padding: 20px;
 }
 
-.tribute-page-link, .documentation-page-link {
+.project-box-link {
     display: flex;
-    margin: 0 auto;
-    margin-top: 15px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    bottom: 10px;
     color: var(--background-color);
 }
 
@@ -496,6 +498,9 @@ footer {
 @media (max-width: 768px) {
     .projects-container {
         grid-template-columns: 1fr;
+    }
+    .project-box, .form-container {
+        width: 300px;
     }
 }
 
