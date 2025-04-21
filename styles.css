@@ -10,7 +10,6 @@ body {
     color: var(--dark-color);
     font-family: Orbitron, sans-serif;
     padding-top: 100px;
-    position: relative;
 }
 
 :root {
@@ -22,7 +21,7 @@ body {
 
 h1 {
     font-family: Orbitron, sans-serif;
-    font-size: 30px;
+    font-size: 1.5rem;
     text-align: center;
     padding-top: 10px;
 }
@@ -128,9 +127,7 @@ a {
     height: 15px;
     background-color: var(--background-color);
     animation: blinking-cursor 1s infinite;
-    position: absolute;
-    top: 13px;
-    left: 190px;
+    display: inline-block;
 }
 
 @keyframes blinking-cursor {
@@ -483,9 +480,35 @@ footer {
     margin: 0 5vw;
 }
 
+@media (max-width: 460px) {
+    #welcome-title {
+        white-space: wrap;
+        animation: none;
+    }
+}
+
+@media (max-width: 688px) {
+    #welcome-title {
+        font-size: 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .projects-container {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 900px) {
+    .terminal {
+        width: 90%;
+        height: fit-content;
+    }
+}
+
+@media (max-width: 1260px) {
+    .pixelart-dinosaur {
+        display: none;
     }
 }
 
